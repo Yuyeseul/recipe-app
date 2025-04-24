@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back">
+
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="정보 수정"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:text="이름" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:text="이름"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:text="전화번호" />
+
+                    <TextView
+                        android:id="@+id/userPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:text="전화번호"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:text="닉네임" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/userNickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="text"
+                            android:paddingTop="15dp"
+                            android:hint="닉네임"
+                            android:textSize="20sp"/>
+
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="사용 중인 닉네임입니다."
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#FBE9E7" />
+
+                <Button
+                    android:id="@+id/btnModify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="수정하기" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A1A1A1"
+                android:text="로그아웃" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#717171"
+                android:text="탈퇴하기" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

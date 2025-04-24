@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".NameSearchActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="재료를 입력하세요."
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/searchword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="ex) 돼지고기"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="2가지 이상은 쉼표( , )로 구분해 주세요." />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:entries="@array/array_category" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="원하시는 카테고리를 선택하세요." />
+
+</LinearLayout>

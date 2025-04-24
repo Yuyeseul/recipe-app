@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navi_home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navi_recipe"
+        android:enabled="true"
+        android:icon="@drawable/baseline_restaurant_menu_24"
+        android:title="@string/recipe"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navi_recommend"
+        android:enabled="true"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="@string/recommend"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navi_myPage"
+        android:enabled="true"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="@string/myPage"
+        app:showAsAction="always"/>
+</menu>

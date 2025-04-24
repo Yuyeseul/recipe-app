@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mypageFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMypage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="15dp"
+                    android:visibility="visible"
+                    android:src="@drawable/default_profile" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="닉네임"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btnProfile"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="프로필 수정"
+                        android:backgroundTint="@color/main"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#FBE9E7" />
+
+            <TextView
+                android:id="@+id/refrigerator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="나의 냉장고"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/shoppinglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="쇼핑 리스트"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/scrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="스크랩"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

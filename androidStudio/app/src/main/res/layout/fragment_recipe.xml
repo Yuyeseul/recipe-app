@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#EF9393"
+            android:hint="요리를 검색해주세요."
+            android:paddingStart="25dp"
+            android:textSize="16sp" />
+
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="한식"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="일식"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="중식"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="양식"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="분식"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="디저트"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn7"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="음료"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn8"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="4dp"-->
+<!--                    android:layout_marginRight="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:backgroundTint="@color/pink"-->
+<!--                    android:text="다이어트"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </TableRow>-->
+
+<!--        </TableLayout>-->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/main"
+            android:text="레시피 등록하기" />
+
+        <ListView
+            android:id="@+id/recipeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

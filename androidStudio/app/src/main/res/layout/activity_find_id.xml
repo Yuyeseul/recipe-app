@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindIdActivity" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back">
+
+        </ImageButton>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 찾기"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:paddingLeft="10dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:layout_margin="10dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/idName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="이름을 입력하세요."
+            android:paddingLeft="10dp"
+            android:textSize="14sp"
+            android:inputType="text"/>
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:layout_margin="10dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/idPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="전화번호를  - 없이 입력하세요."
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/idInquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="조회" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#FBE9E7" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회결과"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="이름" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="아이디" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/findName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/findID"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
